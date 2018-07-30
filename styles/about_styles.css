@@ -802,6 +802,8 @@ section
 
 .intro_1
 {
+    
+   
     padding-top: 0;
     width: 100%;
 	height: 100%;
@@ -829,6 +831,13 @@ section
 	font-weight: 600;
 	color: #929191;
 	margin-top: 60px;
+}
+
+
+.intro_text_1
+{
+   color: #2d2c2c;
+    
 }
 .intro_button
 {
@@ -910,7 +919,7 @@ section
 
 .stats
 {
-	back
+	padding-top: 105px;
 	padding-bottom: 105px;
 }
 .stats_text

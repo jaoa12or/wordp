@@ -10,12 +10,16 @@ get_header('about'); ?>
 
            
 <div class="home">
+     
+     <?php
+    $estilo = 'background-image: url(\'' . get_stylesheet_directory_uri() . '/images/about_background.jpg\')';
+    ?>
 
      
            
-           <div class="home_background parallax-window" data-parallax="scroll"  data-src="images/about_background.jpg">
+           <div class="home_background parallax-window" data-parallax="scroll" style="<?php echo esc_attr($estilo); ?>" data-image-src="images/about_background.jpg">
               
-             <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/about_background.jpg" alt="">
+       
                
            </div>
    
@@ -41,16 +45,21 @@ get_header('about'); ?>
                 </div>
             </div>
         </div>
+        
+<?php
+    $estilo = 'background-image: url(\'' . get_stylesheet_directory_uri() . '/images/background_celebrityspecialco.png\')';
+?>
+<div style="<?php echo esc_attr($estilo); ?>"></div>
 
 
-        <div class="intro intro_1">
+        <div class="intro intro_1" style="<?php echo esc_attr($estilo); ?>">
             <div class="container">
                 <div class="row">
 
                     <div class="col-lg-7">
                         <div class="intro_content">
 
-                            <p class="intro_text">GRAND TOURISM les brinda la oportunidad de acceder de una forma selecta y oportuna a los mejores precios y tarifas del mercado turístico. Contamos con un personal especializado en viajes de placer, lunas de miel, cruce- ros, europa y cualquier destino exótico. Es un plus tener un equipo humano lo suficientemente capacitado en aplicaciones modernas y con recursos técnicos que per- mitan prestar a los clientes una asesoría integral, gene- rando cada día mayor confianza, solidez y respaldo.</p>
+                            <p class="intro_text intro_text_1">GRAND TOURISM les brinda la oportunidad de acceder de una forma selecta y oportuna a los mejores precios y tarifas del mercado turístico. Contamos con un personal especializado en viajes de placer, lunas de miel, cruce- ros, europa y cualquier destino exótico. Es un plus tener un equipo humano lo suficientemente capacitado en aplicaciones modernas y con recursos técnicos que per- mitan prestar a los clientes una asesoría integral, gene- rando cada día mayor confianza, solidez y respaldo.</p>
                         </div>
                     </div>
 

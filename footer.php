@@ -87,6 +87,8 @@ Te invitamos a hacer uso racional del agua y la energía, a tener una buena disp
 
 			</div>
 		</div>
+		
+	
 	</footer>
 
 	<!-- Copyright -->
@@ -127,6 +129,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>Celebr
 <script src="<?php bloginfo('template_url')?>/plugins/easing/easing.js"></script>
 <script src="<?php bloginfo('template_url')?>/js/custom.js"></script>
 
+<?php wp_footer();?>
 </body>
 
 </html>

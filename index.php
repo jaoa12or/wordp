@@ -137,6 +137,7 @@
 			
 
 				<!-- Intro Item -->
+				<?php  if(have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<div class="col-lg-4 intro_col">
 					<div class="intro_item_1">
@@ -158,12 +159,19 @@
 					</div>
 				</div>
 
+            
+                <?php endwhile; else: ?>
+                
+                
+                
+                 <?php endif; ?>
 				<!-- Intro Item -->
 
 				
 				
 
 			</div>
+			
 			<div class="row intro_items">
 
 				<!-- Intro Item -->
@@ -171,11 +179,33 @@
 			
 
 				<!-- Intro Item -->
+				
+				<?php  if(have_posts()) : while (have_posts()) : the_post(); ?>
+				
 
 				<div class="col-lg-4 intro_col">
 					<div class="intro_item">
 						<div class="intro_item_overlay"></div>
 						<!-- Image by https://unsplash.com/@hellolightbulb -->
+						
+						
+						
+                        
+                                   <div class="intro_item_background" style="background-image:url(images/intro_2.jpg)">
+                                      
+                                      
+                                      <div class="content_img"></div>
+                                       
+                                            <img class="content_img" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/intro_2.jpg" alt="">
+                                       
+                                    
+                                    </div>
+                                    
+                                    
+                                    
+                       
+                      
+                      
 						<div class="intro_item_background" style="background-image:url(images/intro_2.jpg)">
 						    <img class="content_img" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/intro_2.jpg" alt="">
 						</div>
@@ -195,9 +225,17 @@
 					</div>
 				</div>
 
+             <?php endwhile; else: ?>
+                       
+                       
+                       
+                        
+            <?php endif; ?>
+                      
+                      
 				<!-- Intro Item -->
 
-				
+            
 				
 
 			</div>
@@ -379,10 +417,13 @@
 	</div>
 
 	
+	<?php
+        $estilo = 'background-image: url(\'' . get_stylesheet_directory_uri() . '/images/contact.png\')';
+    ?>
 
 	<div class="contact">
-		<div class="contact_background" style="background-image:url(images/contact.png)">
-		      <img class="content_img" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/contact.png" alt="">
+		<div class="contact_background" style="<?php echo esc_attr($estilo); ?>">
+		  
 		</div>
 
 		<div class="container">

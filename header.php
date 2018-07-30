@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url')?>">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/styles/responsive.css">
-
+<?php wp_head();?>
 </head>
 
 <body>
