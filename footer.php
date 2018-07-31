@@ -16,7 +16,7 @@ Te invitamos a hacer uso racional del agua y la energía, a tener una buena disp
 					</div>
 				</div>
 
-				<!-- Footer Column -->
+				<!-- Footer Column -->     
 				<div class="col-lg-4 footer_column">
 					<div class="footer_col">
 						<div class="footer_title"></div>
@@ -46,6 +46,17 @@ Te invitamos a hacer uso racional del agua y la energía, a tener una buena disp
 					<div class="footer_col">
 						<div class=" footer_title footer_title_1">Menú</div>
 						<div class="footer_content footer_tags">
+						
+						    	<?php wp_nav_menu(
+                                     array(
+                                     'container' => false,
+                                     'items_wrap' => '<ul class="tags_list clearfix">%3$s</ul>',
+                                     'theme_location' => 'menuFooter'
+                                     )); ?>
+                                     
+                                     
+                                     <!--
+						
 							<ul class="tags_list clearfix">
 								<li class="tag_item col-lg-12"><a href="#">design</a></li>
 								<li class="tag_item col-lg-12"><a href="#">fashion</a></li>
@@ -54,6 +65,8 @@ Te invitamos a hacer uso racional del agua y la energía, a tener una buena disp
 								<li class="tag_item col-lg-12"><a href="#">party</a></li>
 								
 							</ul>
+							
+							-->
 						</div>
 					</div>
 				</div>
@@ -92,6 +105,7 @@ Te invitamos a hacer uso racional del agua y la energía, a tener una buena disp
 	</footer>
 
 	<!-- Copyright -->
+	
 
 	<div class="copyright">
 		<div class="container">
@@ -106,6 +120,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>Celebr
 				<div class="col-lg-9 order-lg-2 order-1">
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
 						<div class="footer_nav">
+							<?php wp_nav_menu(
+                                     array(
+                                     'container' => false,
+                                     'items_wrap' => '<ul class="footer_nav_list">%3$s</ul>',
+                                     'theme_location' => 'menuFooter2'
+                                     )); ?>
+						<!--
+						
 							<ul class="footer_nav_list">
 								<li class="footer_nav_item"><a href="#">home</a></li>
 								<li class="footer_nav_item"><a href="about.html">about us</a></li>
@@ -113,6 +135,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>Celebr
 								<li class="footer_nav_item"><a href="blog.html">news</a></li>
 								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
 							</ul>
+							
+							-->
 						</div>
 					</div>
 				</div>
