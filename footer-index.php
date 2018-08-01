@@ -42,35 +42,9 @@ Te invitamos a hacer uso racional del agua y la energía, a tener una buena disp
 				</div>
 
 				<!-- Footer Column -->
-				<div class="col-lg-4 footer_column footer_column_1">
-					<div class="footer_col">
-						<div class=" footer_title footer_title_1">Menú</div>
-						<div class="footer_content footer_tags">
-						
-						    	<?php wp_nav_menu(
-                                     array(
-                                     'container' => false,
-                                     'items_wrap' => '<ul class="tags_list clearfix">%3$s</ul>',
-                                     'theme_location' => 'menuFooter'
-                                     )); ?>
-                                     
-                                     
-                                     <!--
-						
-							<ul class="tags_list clearfix">
-								<li class="tag_item col-lg-12"><a href="#">design</a></li>
-								<li class="tag_item col-lg-12"><a href="#">fashion</a></li>
-								<li class="tag_item col-lg-12"><a href="#">music</a></li>
-								<li class="tag_item col-lg-12"><a href="#">video</a></li>
-								<li class="tag_item col-lg-12"><a href="#">party</a></li>
-								
-							</ul>
-							
-							-->
-						</div>
-					</div>
+			<div class="col-lg-4 footer_column">
+			
 				</div>
-
 				<!-- Footer Column -->
 				<div class="col-lg-4 footer_column">
 					<div class="footer_col">
@@ -136,6 +110,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>Celebr
 <script src="<?php bloginfo('template_url')?>/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="<?php bloginfo('template_url')?>/plugins/easing/easing.js"></script>
 <script src="<?php bloginfo('template_url')?>/js/custom.js"></script>
+<script src="<?php bloginfo('template_url')?>/js/modal.js"></script>
 
 <?php wp_footer();?>
 </body>

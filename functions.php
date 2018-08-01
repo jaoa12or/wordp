@@ -6,7 +6,7 @@ register_nav_menus( array(
 'menuFooter2' => 'Menu footer',
 ));
 add_theme_support( 'post-thumbnails');
-add_image_size( 'slider_thumbs', 470, 300, true );
+add_image_size( 'single_thumbs', 530, 290, true );
 add_image_size( 'list_articles_thumbs', 650, 800, true );	
 add_image_size( 'list_convenios_thumbs', 192, 143, true );	
 register_sidebar(array(

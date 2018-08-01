@@ -65,16 +65,12 @@
                         <div class="footer_col">
                             <div class="footer_title">tags</div>
                             <div class="footer_content footer_tags">
-                                <ul class="tags_list clearfix">
-                                    <li class="tag_item"><a href="#">design</a></li>
-                                    <li class="tag_item"><a href="#">fashion</a></li>
-                                    <li class="tag_item"><a href="#">music</a></li>
-                                    <li class="tag_item"><a href="#">video</a></li>
-                                    <li class="tag_item"><a href="#">party</a></li>
-                                    <li class="tag_item"><a href="#">photography</a></li>
-                                    <li class="tag_item"><a href="#">adventure</a></li>
-                                    <li class="tag_item"><a href="#">travel</a></li>
-                                </ul>
+                               <?php wp_nav_menu(
+                                     array(
+                                     'container' => false,
+                                     'items_wrap' => '<ul class="tags_list clearfix">%3$s</ul>',
+                                     'theme_location' => 'menuFooter'
+                                     )); ?>
                             </div>
                         </div>
                     </div>
@@ -139,13 +135,7 @@
                     <div class="col-lg-9 order-lg-2 order-1">
                         <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                             <div class="footer_nav">
-                                <ul class="footer_nav_list">
-                                    <li class="footer_nav_item"><a href="index.html">home</a></li>
-                                    <li class="footer_nav_item"><a href="#">about us</a></li>
-                                    <li class="footer_nav_item"><a href="offers.html">offers</a></li>
-                                    <li class="footer_nav_item"><a href="blog.html">news</a></li>
-                                    <li class="footer_nav_item"><a href="contact.html">contact</a></li>
-                                </ul>
+                               
                             </div>
                         </div>
                     </div>

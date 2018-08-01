@@ -57,6 +57,49 @@ Author URI:
 		 url('fonts/beyond_the_mountains.ttf')  format('opentype');
 }
 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(255,255,255,0.9);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+    transform: translate();
+    transition:all .5s ease-in-out;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -400,8 +443,9 @@ section
 {
 	display: inline-block;
 }
-.user_box_link a
+.user_box_link 
 {
+    cursor:pointer;
 	display: block;
 	font-size: 10px;
 	line-height: 36px;
@@ -409,7 +453,7 @@ section
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
-.user_box_link a:hover
+.user_box_link :hover
 {
 	color:#00c3ff;
 }

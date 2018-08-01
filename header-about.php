@@ -53,13 +53,12 @@
 							<div class="logo"><a href="#"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/celebrity%20special%20co%20logo.png" alt=""></a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
-							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="#">home</a></li>
-								<li class="main_nav_item"><a href="about.html">about us</a></li>
-								<li class="main_nav_item"><a href="offers.html">offers</a></li>
-								<li class="main_nav_item"><a href="blog.html">news</a></li>
-								<li class="main_nav_item"><a href="contact.html">contact</a></li>
-							</ul>
+						<?php wp_nav_menu(
+                                     array(
+                                     'container' => false,
+                                     'items_wrap' => '<ul id="main_nav_list">%3$s</ul>',
+                                     'theme_location' => 'menu'
+                                     )); ?>
 						</div>
 						
 

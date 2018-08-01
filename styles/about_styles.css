@@ -483,17 +483,17 @@ section
 {
 	margin-right: 221px;
 }
-.main_nav_item
+.main_nav .container .row .main_nav_col .main_nav_container #main_nav_list .menu-item 
 {
 	position: relative;
 	display: inline-block;
 	margin-right: 40px;
 }
-.main_nav_item:last-child
+.main_nav .container .row .main_nav_col .main_nav_container #main_nav_list .menu-item :last-child
 {
 	margin-right: 0px;
 }
-.main_nav_item a
+.main_nav .container .row .main_nav_col .main_nav_container #main_nav_list .menu-item  a
 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -503,7 +503,7 @@ section
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-.main_nav_item::after
+.main_nav .container .row .main_nav_col .main_nav_container #main_nav_list .menu-item ::after
 {
 	display: block;
 	position: absolute;
@@ -511,7 +511,7 @@ section
 	bottom: -11px;
 	width: calc(100% + 2px);
 	height: 2px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #00c3ff, #3333ff);
 	content: '';
 	opacity: 0;
 	-webkit-transition: all 200ms ease;
@@ -520,7 +520,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.main_nav_item:hover::after
+.main_nav .container .row .main_nav_col .main_nav_container #main_nav_list .menu-item :hover::after
 {
 	opacity: 1;
 }
@@ -1289,7 +1289,7 @@ section
 
 	margin-top: 20px;
 }
-.tag_item
+.footer .container .row .footer_column_1 .footer_col .footer_tags .tags_list .menu-item
 {
     
 	height: 35px;
@@ -1303,7 +1303,7 @@ section
 	transition: all 200ms ease;
 }
 
-.tag_item a
+.footer .container .row .footer_column_1 .footer_col .footer_tags .tags_list .menu-item a
 {
 	display: block;
 	font-size: 18px;
@@ -1313,6 +1313,7 @@ section
 	
 	
 }
+
 
 /*********************************
 13.4 Footer - Contact Info

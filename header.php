@@ -26,22 +26,7 @@
 
 		<!-- Top Bar -->
 
-		<div class="top_bar">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex flex-row">
-						<div class="phone">+45 345 3324 56789</div>
-						<div class="social">
-							
-						</div>
-						<div class="user_box ml-auto">
-							
-							<div class="user_box_login user_box_link"><a href="#"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icono%20login.png" alt=""> Iniciar Sesión</a></div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
+	
 
 		<!-- Main Navigation -->
 		
